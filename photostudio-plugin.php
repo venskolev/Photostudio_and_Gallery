@@ -43,3 +43,8 @@ function generate_photostudio_gallery_shortcode($atts) {
 }
 
 require_once plugin_dir_path( __FILE__ ) . 'widgets/photostudio-galleries-widget.php';
+
+require_once( plugin_dir_path( __FILE__ ) . 'inc/settings.php' );
+if ( is_admin() ) {
+    $settings = new Settings();
+}
