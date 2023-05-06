@@ -32,8 +32,9 @@ function photostudio_register_gallery_post_type() {
         'has_archive'           => 'galleries',
         'hierarchical'         => false,
         'menu_position'         => null,
-        'supports'              => array( 'title', 'editor', 'thumbnail' ),
-        'menu_icon'             => 'dashicons-images-alt'
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'post_tag' ),
+        'menu_icon'             => 'dashicons-images-alt',
+        'taxonomies' => array('post_tag'),
     );
 
 //     register_post_type( 'photostudio_gallery', $args );
